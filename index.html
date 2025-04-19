@@ -3,75 +3,282 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SELF EMPLOYMENT COMPANY (SEC)</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>SEC - Smart Loans & Investments for Students</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      color: black;
+    }
+    header {
+      background-color: #007acc;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(to right, #007acc, #f3c13a);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 1rem 2rem;
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .card {
+      background: #f5f5f5;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+      margin: 1rem;
+      flex: 1 1 250px;
+      text-align: center;
+    }
+    .testimonials blockquote {
+      font-style: italic;
+      margin: 1rem auto;
+      max-width: 600px;
+    }
+    .quick-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      text-align: center;
+    }
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    footer a {
+      color: #f3c13a;
+      margin: 0 0.5rem;
+    }
+    .how-it-works {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.step-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-number {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+.testimonials {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background-color: #f4f4f4;
+  border-left: 6px solid #4caf50;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  text-align: left;
+  position: relative;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.author {
+  font-weight: bold;
+  color: #333;
+}
+
+.author span {
+  color: #4caf50;
+}
+
+  </style>
 </head>
 <body>
-  <!-- Header Section -->
   <header>
-    <div class="container">
-      <h1>Self Employment Company</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="logo"><strong>SEC</strong></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About SEC</a>
+      <a href="loans.html">Loans</a>
+      <a href="shares.html">Shares</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
-    <div class="container">
-      <h2>Welcome to SEC</h2>
-      <p>At SEC, we believe no student should drop out due to financial challenges. Get the support you need to continue your studies and achieve your goals.</p>
+    <h1>Smart Loans & Investment Opportunities for Students in Tanzania</h1>
+    <p>SEC helps students access quick loans and grow their money through secure investments — all from campus.</p>
+    <div class="buttons">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqAUmeQme1o5Ixs-rSY4-rMvvbeKPI26aOQS21vnSinNIpZw/viewform?usp=sf_link" target="_blank" class="button"> Apply for a loan
+    </a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfbr0Jozi17N5Fa8ZhwItX6mkHxEhLQ5oDvT6VOVDV5DI7GWw/viewform?usp=header" target="_blank" class="button">
+        Buy Shares
+      </a>
+      
+      <a href="agents.html">Become a Campus Agent</a>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>Don't let financial constraints hold you back. Apply for our financial assistance program and focus on your studies. Limited spots available. Apply now to secure your financial assistance:</p>
-      <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSdqAUmeQme1o5Ixs-rSY4-rMvvbeKPI26aOQS21vnSinNIpZw/viewform?usp=sf_link" target="_blank">Click here to apply</a></p>
-
-
+  <section class="why-sec">
+    <h2 style="text-align:center">Why Students Trust SEC</h2>
+    <div class="columns">
+      <div class="card">✅ Fast Loan Approvals</div>
+      <div class="card">💼 Investment Opportunities</div>
+      <div class="card">🎓 Student-Focused Services</div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <ul>
-        <li><strong>Loans from 50,000/= Tsh and above.</strong> 
-            This is to support students in Tanzania with short term loans to cover educational expenses and foster entrepreneurship. 
-            And why choose us?</li>
- 
-        <li>1.Short-term loan duration (10-70 days)</li>
-        <li>2.Flexible repayment plans</li>
-        <li>3.Multiple agents in every institution</li>
-        <li>4.Business education for students</li>
-      </ul>
+  <section class="how-it-works">
+    <h2>How SEC Works</h2>
+    <div class="steps-grid">
+      <div class="step-card">
+        <span class="step-number">1</span>
+        <p>Apply for Loan / Buy Shares</p>
+      </div>
+      <div class="step-card">
+        <span class="step-number">2</span>
+        <p>Submit ID + Guarantor/Collateral</p>
+      </div>
+      <div class="step-card">
+        <span class="step-number">3</span>
+        <p>Get Approval in 4 Hours</p>
+      </div>
+      <div class="step-card">
+        <span class="step-number">4</span>
+        <p>Receive Money or Shares</p>
+      </div>
     </div>
   </section>
+  
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Email: <a href="mailto:secglobal23@gmail.com">secglobal23@gmail.com</a></p>
-      <p>WhatsApp and normal calls: <a href="tel:+255755219160">0755219160</a>, <a href="tel:+255745234409">0745234409</a>. Available 24 hours.</p>
+  <section class="testimonials">
+    <h2>What Students Say</h2>
+    <div class="testimonial-cards">
+      <div class="testimonial-card">
+        <p class="quote">“SEC helped me during recession to manage campus life while waiting for BOOM”</p>
+        <div class="author">— Calvin, <span>KCMC</span></div>
+      </div>
+      <div class="testimonial-card">
+        <p class="quote">“Fast, reliable, and student-friendly!”</p>
+        <div class="author">— Amina, <span>UDSM</span></div>
+      </div>
+      <div class="testimonial-card">
+        <p class="quote">“Now I earn dividends every 2 months. Buying shares changed how I think about money.”</p>
+        <div class="author">— Frank, <span>CBE Dodoma</span></div>
+      </div>
     </div>
   </section>
+  
 
-  <!-- Footer Section -->
+  <section class="quick-stats">
+    <div><strong>200+</strong><br/>Students Helped</div>
+    <div><strong>TZS 5.3M+</strong><br/>Loans Issued</div>
+    <div><strong>60%</strong><br/>Profit Shared</div>
+    <div><strong>12+</strong><br/>Active Campuses</div>
+  </section>
+
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Self Employment Company. All rights reserved.</p>
-    </div>
+    <p><strong>Stay Connected with SEC</strong></p>
+    <p>Email: secglobal23@gmail.com | WhatsApp: +255741616153, +255628412673</p>
+    <p>Follow us:
+      <a href="#">Instagram</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">TikTok</a> |
+      <a href="#">Facebook</a>
+    </p>
+    <p>© 2025 SEC</p>
   </footer>
 </body>
 </html>
-
