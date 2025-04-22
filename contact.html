@@ -124,22 +124,16 @@
       background-color: #1c3e75;
     }
 
-    .footer {
-      background-color: #1c3e75;
+    footer {
+      background-color: black;
       color: white;
       text-align: center;
-      padding: 20px 0;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
+      padding: 2rem;
     }
-
-    .footer a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
+    footer a {
+      color: #f3c13a;
+      margin: 0 0.5rem;
     }
-
     /* Sticky Navigation */
     nav {
       position: fixed;
@@ -245,7 +239,8 @@
       <h2>Leave Us a Message</h2>
     </div>
     <div class="form-container">
-      <form action="mailto:secglobal23@gmail.com" method="post" enctype="text/plain">
+      <form action="send_message.php" method="post">
+
         <div class="form-group">
           <label for="full-name">Full Name</label>
           <input type="text" id="full-name" name="full-name" required>
@@ -265,14 +260,16 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <p>Stay Connected with SEC</p>
-    <p>
-      Email: <a href="mailto:secglobal23@gmail.com">secglobal23@gmail.com</a><br>
-      WhatsApp: <a href="https://wa.me/+255741616153">+255 741 616 153</a> | <a href="https://wa.me/+255628412673">+255 628 412 673</a><br>
-      Socials: <a href="https://www.instagram.com/SEC_global.23">Instagram</a> | <a href="https://twitter.com/SEC_global.23">Twitter</a> | <a href="https://www.tiktok.com/@SEC_global.23">TikTok</a> | <a href="https://www.facebook.com/SEC_global.23">Facebook</a><br>
-      Copyright © 2025 SEC
+  <footer>
+    <p><strong>Stay Connected with SEC</strong></p>
+    <p>Email: secglobal23@gmail.com | WhatsApp: +255741616153, +255628412673</p>
+    <p>Follow us:
+      <a href="#">Instagram</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">TikTok</a> |
+      <a href="#">Facebook</a>
     </p>
+    <p>© 2025 SEC</p>
   </footer>
 
 </body>
